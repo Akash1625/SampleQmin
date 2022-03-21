@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Sample Qmin</string>
+    <string name="hello">Hello</string>
+    <string name="akash">Akash</string>
+    <string name="know_more">Know More</string>
+    <string name="in_the_spotlight">In the spotlight</string>
+    <string name="restaurants_near_you">Restaurants near you</string>
+    <string name="s_kms">%s Kms</string>
+    <string name="chinese">Chinese</string>
+    <string name="order_now">Order now</string>
+</resources>

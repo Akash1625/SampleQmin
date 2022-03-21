@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:paddingHorizontal="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_generic"
+        android:layout_width="100dp"
+        android:layout_height="160dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_generic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_family_fest"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/family_feast_bg">
+
+                <ImageView
+                    android:id="@+id/iv_Food"
+                    android:layout_width="100dp"
+                    android:layout_height="88dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@null"
+                    android:scaleType="fitXY"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_Event_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="2dp"
+                    android:fontFamily="@font/proxima_nova_alt_bold"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/family_feast"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iv_Food"
+                    tools:text="Family feast" />
+
+                <TextView
+                    android:id="@+id/tv_Description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="10dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/proxima_nova_regular"
+                    android:gravity="center_horizontal"
+                    android:maxLines="2"
+                    android:textColor="@color/family_feast"
+                    android:textSize="10sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_Event_Name"
+                    tools:text="Family feast for family time" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
